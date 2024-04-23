@@ -57,5 +57,12 @@ namespace Goodreads
                 MessageBox.Show("Please enter both username and password.");
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+        }
     }
 }

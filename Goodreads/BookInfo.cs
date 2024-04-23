@@ -238,7 +238,7 @@ namespace Goodreads
             try
             {
                 // Check if any cell is selected in the dataGridViewReviews
-                if (dataGridViewReviews.SelectedCells.Count > 0)
+                if (dataGridViewReviews.SelectedCells.Count >= 0)
                 {
                     // Get the index of the selected cell
                     int selectedRowIndex = dataGridViewReviews.SelectedCells[0].RowIndex;
@@ -252,7 +252,6 @@ namespace Goodreads
                     // Refresh the dataGridViewReviews to reflect the changes
                     LoadReviews();
 
-                    MessageBox.Show("Review deleted successfully.");
                 }
                 else
                 {

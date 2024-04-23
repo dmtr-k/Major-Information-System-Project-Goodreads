@@ -101,15 +101,6 @@ namespace Goodreads
             return regex.IsMatch(email); // call ismatch method and return boolean value.
         }
 
-        /*private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-
-            this.Hide();
-            form2.ShowDialog();
-        }
-        */
-
         private void logIn_Click_1(object sender, EventArgs e)
         {
             this.Hide();

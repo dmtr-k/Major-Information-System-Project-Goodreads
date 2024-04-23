@@ -34,6 +34,7 @@
             passwordTextBox = new TextBox();
             logInButton = new Button();
             checkBox1 = new CheckBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -93,11 +94,23 @@
             checkBox1.Text = "Remember me";
             checkBox1.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
+            label3.Location = new Point(325, 342);
+            label3.Name = "label3";
+            label3.Size = new Size(150, 15);
+            label3.TabIndex = 15;
+            label3.Text = "Don't have an account yet?";
+            label3.Click += label3_Click;
+            // 
             // LogIn
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(checkBox1);
             Controls.Add(logInButton);
             Controls.Add(passwordTextBox);
@@ -118,5 +131,6 @@
         private TextBox passwordTextBox;
         private Button logInButton;
         private CheckBox checkBox1;
+        private Label label3;
     }
 }
